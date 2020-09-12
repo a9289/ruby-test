@@ -4,7 +4,7 @@ cat <<-EOF > /etc/ruby2/config.json
 {
     "inbounds": [
         {
-            "port": 8080,
+            "port": $PORT,
             "protocol": "vmess",
             "settings": {
                 "clients": [
