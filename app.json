@@ -1,0 +1,8 @@
+{
+    "name": "ruby-test",
+    "description": "ruby-test",
+    "keywords": ["ruby"],
+    "website": "https://github.com/a9289/ruby-test",
+    "repository": "https://github.com/a9289/ruby-test",
+    "stack": "container"
+}
