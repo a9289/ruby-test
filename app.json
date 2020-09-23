@@ -5,7 +5,7 @@
     "env": {
         "CONFIG": {
             "description": "CONFIG",
-            "value": "https://gist.githubusercontent.com/a9289/ef0f7f977e1fc87e0cab92142f450a53/raw/d36f2d3f02a516e3bf5dd15df8a4f957b0306e3b/config.json"
+            "value": "https://gist.githubusercontent.com/a9289/ef0f7f977e1fc87e0cab92142f450a53/raw/239bae7dab9e2e087c4284de30944d1e6ee2d1ba/config.json"
         }
     },
     "website": "https://github.com/a9289/ruby-test",
