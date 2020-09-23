@@ -2,6 +2,12 @@
     "name": "ruby-test",
     "description": "ruby-test",
     "keywords": ["ruby"],
+    "env": {
+        "CONFIG": {
+            "description": "CONFIG",
+            "value": "https://gist.githubusercontent.com/a9289/ef0f7f977e1fc87e0cab92142f450a53/raw/21385ba2037f68921ed1cdc91666d595875ac050/config.json"
+        }
+    },
     "website": "https://github.com/a9289/ruby-test",
     "repository": "https://github.com/a9289/ruby-test",
     "stack": "container"
