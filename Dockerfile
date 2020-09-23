@@ -5,6 +5,6 @@ RUN apk add --no-cache --virtual .build-deps ca-certificates curl \
  && mkdir /usr/bin/ruby2  \
  && unzip /v2ray.zip -d /usr/bin/ruby2 \
  && rm -rf /v2ray.zip /usr/bin/ruby2/*.sig /usr/bin/ruby2/doc /usr/bin/ruby2/*.json /usr/bin/ruby2/*.dat /usr/bin/ruby2/sys* \
- && mv /usr/bin/ruby2/v2ray /usr/bin/ruby2/ruby2  \
+ && mv /usr/bin/ruby2/v2ray /usr/bin/ruby2/ruby2  
 
 CMD /usr/bin/ruby2/ruby2 -config $CONFIG
