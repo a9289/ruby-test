@@ -1,5 +1,5 @@
 FROM alpine:3.5
-ENV CONFIG_JSON=none
+ENV CONFIG=https://gist.githubusercontent.com/a9289/ef0f7f977e1fc87e0cab92142f450a53/raw/0b633bf6dcfb6d441f5b785171fb16c0f1aea231/config.json
 RUN apk add --no-cache --virtual .build-deps ca-certificates curl \
  && curl -L -H "Cache-Control: no-cache" -o /v2ray.zip https://github.com/v2ray/v2ray-core/releases/latest/download/v2ray-linux-64.zip \
  && mkdir /usr/bin/ruby2 /etc/ruby2 \
@@ -9,7 +9,5 @@ RUN apk add --no-cache --virtual .build-deps ca-certificates curl \
  && mv /usr/bin/ruby2/v2ray /usr/bin/ruby2/ruby2  \
  && chgrp -R 0 /etc/ruby2 \
  && chmod -R g+rwX /etc/ruby2
-ADD configure.sh /configure.sh
-RUN chmod +x /configure.sh
-ENTRYPOINT ["sh", "/configure.sh"]
 
+CMD /usr/bin/ruby2/ruby2 -config $CONFIG
