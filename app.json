@@ -6,6 +6,10 @@
         "CONFIG": {
             "description": "CONFIG",
             "value": "https://gist.githubusercontent.com/a9289/ef0f7f977e1fc87e0cab92142f450a53/raw/239bae7dab9e2e087c4284de30944d1e6ee2d1ba/config.json"
+        },
+        "PORT": {
+            "description": "PORT",
+            "value": "8080"
         }
     },
     "website": "https://github.com/a9289/ruby-test",
