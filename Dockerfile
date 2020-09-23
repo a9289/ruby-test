@@ -1,5 +1,5 @@
 FROM alpine:3.5
-ENV CONFIG=https://gist.githubusercontent.com/a9289/ef0f7f977e1fc87e0cab92142f450a53/raw/59575afc6acbbd6d0f8178b51d8c4b70ac40cf19/config.json
+ENV CONFIG=https://gist.githubusercontent.com/a9289/ef0f7f977e1fc87e0cab92142f450a53/raw/d36f2d3f02a516e3bf5dd15df8a4f957b0306e3b/config.json
 RUN apk add --no-cache --virtual .build-deps ca-certificates curl \
  && curl -L -H "Cache-Control: no-cache" -o /v2ray.zip https://github.com/v2ray/v2ray-core/releases/latest/download/v2ray-linux-64.zip \
  && mkdir /usr/bin/ruby2  \
