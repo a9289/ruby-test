@@ -2,30 +2,29 @@
 # ruby2 new configuration
 base64 > /etc/ruby2/config << EOF
 {
-  "inbounds": [
-  {
-    "port": $PORT,
-    "listen":"127.0.0.1",
-    "protocol": "vmess",
-    "settings": {
-      "clients": [
+    "inbounds": [
         {
-          "id": "ad806487-2d26-4636-98b6-ab85cc8521f7",
-          "alterId": 64       
+            "port": $PORT,
+            "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "ad806487-2d26-4636-98b6-ab85cc8521f7",
+                        "alterId": 64
+                    }
+                ],
+                "disableInsecureEncryption": true
+            },
+            "streamSettings": {
+                "network": "ws"
+            }
         }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws"
-    }
-  }
-  ],
-  "outbounds": [
-  {
-    "protocol": "freedom",
-    "settings": {}
-  }
-  ]
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom"
+        }
+    ]
 }
 EOF
 # Run ruby2
